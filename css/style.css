@@ -1,15 +1,48 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+} 
 
 .container{
     /* debug */
     background-color: red; 
+    width: 70%;
+    margin: auto;
+    padding: 2rem 0;
+    border-radius: 10px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button{
+    margin: 0 1rem;
+    padding: 5px;
+}
+
+.inputs input, .inputs select{
+    display: block;
+}
+
+h1, .inputs .info-utente{
+    text-align: center;
+}
+
+.inputs .info-utente{
+    padding: 0 3rem;
 }
 
 th{
     width: 200px;
     text-align: left;
 }
+
