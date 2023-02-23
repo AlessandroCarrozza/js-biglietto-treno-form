@@ -15,7 +15,10 @@ let buttonAnnullaDom = document.getElementById("buttonAnnulla");
 buttonGeneraDom.addEventListener("click", 
     function () {
         nomeUtente = nomeUtenteDom.value;
-        console.log(nomeUtente);
+        
+        let nomePasseggero = document.getElementById("nomePasseggero");
+        nomePasseggero.innerHTML = nomeUtente;
+
 
         numKM = numKmDom.value;
         console.log(numKM);
@@ -36,8 +39,8 @@ buttonGeneraDom.addEventListener("click",
 
 buttonAnnullaDom.addEventListener("click", 
     function () {
-        nomeUtenteDom.innerHTML = " ";
+        nomeUtenteDom.value = " ";
 
-        numKmDom.innerHTML = " ";
+        numKmDom.value = " ";
     }
 );
