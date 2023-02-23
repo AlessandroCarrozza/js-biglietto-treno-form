@@ -57,6 +57,12 @@ buttonGeneraDom.addEventListener("click",
         numeroCarrozzaDom.innerHTML = numeroCarrozza;
 
 
+
+        let codiceCpDom = document.getElementById("codice-cp");
+        let codiceCp = Math.floor(Math.random() * 10000)+ 90000 ;
+        codiceCpDom.innerHTML = codiceCp;
+
+
         
 
 
