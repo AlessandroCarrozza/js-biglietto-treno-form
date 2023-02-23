@@ -52,7 +52,7 @@ buttonGeneraDom.addEventListener("click",
 
 
 
-        let numeroCarrozzaDom = document.getElementById("numero-carrozza");
+        const numeroCarrozzaDom = document.getElementById("numero-carrozza");
         let numeroCarrozza = Math.floor(Math.random() * 10 ) + 1;
         numeroCarrozzaDom.innerHTML = numeroCarrozza;
 
@@ -63,9 +63,8 @@ buttonGeneraDom.addEventListener("click",
         codiceCpDom.innerHTML = codiceCp;
 
 
-        
-
-
+        const ticketUtenteDom = document.getElementById("ticketUtente");
+        ticketUtenteDom.classList.remove("d-none");
         
     }
 );

@@ -73,8 +73,18 @@ th{
 
 .nome-passeggero{
     background-color: grey;
+    width: 250px;
+    padding: 10px;
 }
 
 .main-title{
     padding: 1rem 0;
+}
+
+.info-corsa{
+    display: flex;
+}
+
+.d-none{
+    display: none;
 }
