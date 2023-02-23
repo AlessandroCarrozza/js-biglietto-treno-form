@@ -2,7 +2,7 @@ let nomeUtenteDom = document.getElementById("nomeUtente");
 let nomeUtente;
 
 let numKmDom = document.getElementById("numeroKm");
-let numKM;
+let numKm;
 
 
 let etaUtenteDom = document.getElementById("etaUtente");
@@ -20,19 +20,26 @@ buttonGeneraDom.addEventListener("click",
         nomePasseggero.innerHTML = nomeUtente;
 
 
-        numKM = numKmDom.value;
-        console.log(numKM);
 
 
         etaUtente = etaUtenteDom.value;
+        let offertaTicket = document.getElementById("offertaTicket");
 
         if (etaUtente == "Maggiorenne") {
-            console.log("Ticket Standard");
+            offertaTicket.innerHTML = "Biglietto Standard";
         } else if (etaUtente == "Minorenne") {
-            console.log("Ticket Junior");
+            offertaTicket.innerHTML = "Biglietto Junior";
         } else {
-            console.log("Ticket Senior");
+            offertaTicket.innerHTML = "Biglietto Senior";
         }
+
+
+
+
+        numKm = numKmDom.value;
+        const coeff = 0.21;
+        let prezzoTicket = numKm * coeff;
+        
     }
 );
 
