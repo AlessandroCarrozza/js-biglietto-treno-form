@@ -7,7 +7,7 @@
 .container{
     /* debug */
     background-color: red; 
-    width: 70%;
+    width: 60%;
     margin: auto;
     padding: 2rem 0;
     border-radius: 10px;
@@ -31,7 +31,12 @@
 
 .inputs input, .inputs select{
     display: block;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: 1px solid blue;
+    margin: 1rem 0;
 }
+
 
 h1, .inputs .info-utente{
     text-align: center;
@@ -46,3 +51,30 @@ th{
     text-align: left;
 }
 
+.ticket-info{
+    border: 1px solid black;
+    display: inline-block;
+    display: flex;
+    border-left: 0;
+    border-right: 0;
+}
+
+.ticket-container{
+    /* debug */
+    width: 60%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.ticket{
+    background-color: red;
+    padding: 20px;
+}
+
+.nome-passeggero{
+    background-color: grey;
+}
+
+.main-title{
+    padding: 1rem 0;
+}
