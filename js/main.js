@@ -10,6 +10,7 @@ let etaUtente;
 
 
 let buttonGeneraDom = document.getElementById("buttonGenera");
+let buttonAnnullaDom = document.getElementById("buttonAnnulla");
 
 buttonGeneraDom.addEventListener("click", 
     function () {
@@ -29,5 +30,14 @@ buttonGeneraDom.addEventListener("click",
         } else {
             console.log("Ticket Senior");
         }
+    }
+);
+
+
+buttonAnnullaDom.addEventListener("click", 
+    function () {
+        nomeUtenteDom.innerHTML = " ";
+
+        numKmDom.innerHTML = " ";
     }
 );
