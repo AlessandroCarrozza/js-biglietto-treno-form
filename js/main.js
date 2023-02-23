@@ -16,14 +16,14 @@ buttonGeneraDom.addEventListener("click",
     function () {
         nomeUtente = nomeUtenteDom.value;
         
-        let nomePasseggero = document.getElementById("nomePasseggero");
-        nomePasseggero.innerHTML = nomeUtente;
+        let nomePasseggeroDom = document.getElementById("nomePasseggero");
+        nomePasseggeroDom.innerHTML = nomeUtente;
 
 
 
 
         etaUtente = etaUtenteDom.value;
-        let offertaTicket = document.getElementById("offertaTicket");
+        let offertaTicketDom = document.getElementById("offertaTicket");
 
         numKm = numKmDom.value;
         const coeff = 0.21;
@@ -34,19 +34,31 @@ buttonGeneraDom.addEventListener("click",
 
         let discountTicketSenior = ((numKm * coeff) * 40) / 100;
         let prezzoTicketSenior = prezzoTicket - discountTicketSenior;
-        
-        let costoTicket = document.getElementById("costoTicket");
+
+        let costoTicketDom = document.getElementById("costoTicket");
 
         if (etaUtente == "Maggiorenne") {
-            offertaTicket.innerHTML = "Biglietto Standard";
-            costoTicket.innerHTML = prezzoTicket.toFixed(2) + "€";
+            offertaTicketDom.innerHTML = "Biglietto Standard";
+            costoTicketDom.innerHTML = prezzoTicket.toFixed(2) + "€";
         } else if (etaUtente == "Minorenne") {
-            offertaTicket.innerHTML = "Biglietto Junior";
-            costoTicket.innerHTML = prezzoTicketJunior.toFixed(2) + "€";
+            offertaTicketDom.innerHTML = "Biglietto Junior";
+            costoTicketDom.innerHTML = prezzoTicketJunior.toFixed(2) + "€";
         } else {
-            offertaTicket.innerHTML = "Biglietto Senior";
-            costoTicket.innerHTML = prezzoTicketSenior.toFixed(2) + "€";
+            offertaTicketDom.innerHTML = "Biglietto Senior";
+            costoTicketDom.innerHTML = prezzoTicketSenior.toFixed(2) + "€";
         }
+
+
+
+
+
+        let numeroCarrozzaDom = document.getElementById("numero-carrozza");
+        let numeroCarrozza = Math.floor(Math.random() * 10 ) + 1;
+        numeroCarrozzaDom.innerHTML = numeroCarrozza;
+
+
+        
+
 
         
     }
