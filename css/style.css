@@ -1,12 +1,28 @@
+
+/* utility */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 } 
 
+:root{
+    --primary-color: #b91450;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+.col-white{
+    color: white;
+}
+/* --------- code --------- */
+
+/* inizio card principale */
 .container{
-    /* debug */
-    background-color: red; 
+    background-color: white; 
     width: 60%;
     margin: auto;
     padding: 2rem 0;
@@ -27,17 +43,27 @@
 .buttons button{
     margin: 0 1rem;
     padding: 5px;
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
 .inputs input, .inputs select{
     display: block;
     padding: 5px 0;
     border-radius: 5px;
-    border: 1px solid blue;
+    border: 1px solid var(--primary-color);
     margin: 1rem 0;
 }
 
+label{
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+/* fine card principale */
 
+
+/* inizio ticket */
 h1, .inputs .info-utente{
     text-align: center;
 }
@@ -51,6 +77,11 @@ th{
     text-align: left;
 }
 
+td{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
 .ticket-info{
     border: 1px solid black;
     display: inline-block;
@@ -60,21 +91,20 @@ th{
 }
 
 .ticket-container{
-    /* debug */
     width: 60%;
     margin: auto;
     margin-top: 2rem;
 }
 
 .ticket{
-    background-color: red;
+    background-color: white;
     padding: 20px;
 }
 
 .nome-passeggero{
     background-color: grey;
     width: 250px;
-    padding: 10px;
+    padding: 12px 18px;
 }
 
 .main-title{
@@ -88,3 +118,8 @@ th{
 .d-none{
     display: none;
 }
+
+th, td{
+    padding: 15px;
+}
+/* fine ticket */
